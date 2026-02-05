@@ -5,3 +5,44 @@ html {
   margin: 0px;
   padding: 0px;
 }
+
+#app {
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+header{
+  display: grid;
+  background-color: grey;
+  grid-template-columns: auto auto;
+}
+
+ul{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+main{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 100%;
+}
+
+.store-item{
+  min-width: 0px;
+  object-fit: contain;
+}
+
+.store-item img{
+  max-width: 100%;
+  object-fit: contain;
+  height:  300px;
+}
+
+.store-item span{
+  padding-right: 25px;
+}
+
+footer{
+  background-color: grey;
+}
